@@ -58,3 +58,17 @@ function toScreamingKebabCase(str) {
 
     return screamingKebabCase;
 };
+
+function convert() {
+    let one = document.getElementById("text").value;
+    document.getElementById("pascal-case").innerText = toPascleCase(one);
+    document.getElementById("camel-case").innerText = toCamlecase(one);
+    document.getElementById("snake-case").innerText = toSnakecase(one);
+    document.getElementById("screaming-snake-case").innerText = toScreamingSnakeCase(one);
+    document.getElementById("kebab-case").innerText = toKebabCase(one);
+    document.getElementById("screaming-kebab-case").innerText = toScreamingKebabCase(one);
+
+}
+
+let btn = document.querySelector("#convert-btn");
+btn.addEventListener("click", convert);
