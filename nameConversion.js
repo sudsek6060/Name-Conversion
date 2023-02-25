@@ -8,7 +8,7 @@ function toPascleCase(str) {
 
     return pascalCase;
 
-}
+};
 
 // Convert to camle case
 function toCamlecase(str) {
@@ -21,7 +21,7 @@ function toCamlecase(str) {
 
     return camelCase;
 
-}
+};
 
 // Convert To Snake Case
 function toSnakecase(str) {
@@ -30,7 +30,7 @@ function toSnakecase(str) {
     const snakeCase = lowerStrSplit.join('_');
 
     return snakeCase;
-}
+};
 
 // Convert to Screaming Snake Case
 function toScreamingSnakeCase(str) {
@@ -39,4 +39,22 @@ function toScreamingSnakeCase(str) {
     const screamingSnakeCase = upperrStrSplit.join('_');
 
     return screamingSnakeCase;
+};
+
+// Convert to kebab Case
+function toKebabCase(str) {
+    const strSplit = str.split(' ');
+    const lowerStrSplit = strSplit.map(el => el.toLowerCase());
+    const kebabCase = lowerStrSplit.join('-');
+
+    return kebabCase;
+};
+
+// Convert to Screaming Kebab Case
+function toScreamingKebabCase(str) {
+    const strSplit = str.split(' ');
+    const upperrStrSplit = strSplit.map(el => el.toUpperCase());
+    const screamingKebabCase = upperrStrSplit.join('-');
+
+    return screamingKebabCase;
 };
