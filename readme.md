@@ -35,6 +35,6 @@ HTML, CSS, JavaScript
 
 [LinkedIn](https://www.linkedin.com/in/sud-sekhar/)
 
-[Netlify](https://accordion-sud.netlify.app/)
+[Netlify](https://name-conversion-sud.netlify.app/)
 
-![Badge](https://name-conversion-sud.netlify.app/)
+![Badge](https://img.shields.io/badge/Netlify-Link-green)
